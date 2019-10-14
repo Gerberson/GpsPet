@@ -12,6 +12,6 @@ namespace Pet.Models
         public int Idade { get => DateTime.Now.Year - DataNascimento.Year; }
         public int AnimalId { get; set; }
         public ICollection<Animal> Animais { get; set; } = new List<Animal>();
-        public Endereco Endereco { get; set; }
+        public Endereco End { get; set; }
     }
 }

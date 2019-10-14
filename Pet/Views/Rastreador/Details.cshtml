@@ -1,0 +1,30 @@
+﻿@model Pet.Models.Rastreador
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rastreador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeSerie)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeSerie)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LocalizacaoId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LocalizacaoId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

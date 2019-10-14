@@ -14,5 +14,6 @@ namespace Pet.Models
         public string Endereco { get; set; }
         public DateTime DataNascimento { get; set; }
         public DateTime DataDeCadastro { get; set; }
+        public Sexo Sexo { get; set; }
     }
 }
